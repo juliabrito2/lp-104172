@@ -1,0 +1,22 @@
+import os
+os.system('cls')
+
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+operador = input("Digite o operador (+, -, * ou /): ")
+
+if operador == "+":
+    resultado = num1 + num2
+elif operador == "-":
+    resultado = num1 - num2
+elif operador == "*":
+    resultado = num1 * num2
+elif operador == "/":
+    resultado = num1 / num2
+else:
+    resultado = "Operador inválido!"
+
+print("Número 1:", num1)
+print("Número 2:", num2)
+print("Operador:", operador)
+print("Resultado:", resultado)

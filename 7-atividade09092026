@@ -1,0 +1,21 @@
+import os
+os.system('cls')
+
+dia = int(input("Digite um número de 1 a 7: "))
+
+if dia == 1:
+    print("Domingo - Final de semana")
+elif dia == 2:
+    print("Segunda-feira - Dia útil")
+elif dia == 3:
+    print("Terça-feira - Dia útil")
+elif dia == 4:
+    print("Quarta-feira - Dia útil")
+elif dia == 5:
+    print("Quinta-feira - Dia útil")
+elif dia == 6:
+    print("Sexta-feira - Dia útil")
+elif dia == 7:
+    print("Sábado - Final de semana")
+else:
+    print("Dia inválido")

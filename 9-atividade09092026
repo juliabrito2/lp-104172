@@ -1,0 +1,35 @@
+import os
+os.system('cls')
+
+valor = float(input("Digite o valor do produto: "))
+
+print("1 - Pagamento à vista")
+print("2 - Pagamento à prazo")
+
+pagamento = int(input("Escolha a forma de pagamento: "))
+
+if pagamento == 1:
+    desconto = valor * 0.10
+    total = valor - desconto
+
+    print("\nValor do produto: R$", format(valor, ".2f"))
+    print("Forma de pagamento: à vista")
+    print("Valor do desconto: R$", format(desconto, ".2f"))
+    print("Total a pagar: R$", format(total, ".2f"))
+
+elif pagamento == 2:
+    parcelas = int(input("Digite a quantidade de parcelas (até 6): "))
+
+    if parcelas >= 1 and parcelas <= 6:
+        valor_parcela = valor / parcelas
+
+        print("\nValor do produto: R$", format(valor, ".2f"))
+        print("Forma de pagamento: à prazo")
+        print("Quantidade de parcelas:", parcelas)
+        print("Valor por parcela: R$", format(valor_parcela, ".2f"))
+        print("Total à prazo: R$", format(valor, ".2f"))
+    else:
+        print("Quantidade de parcelas inválida!")
+
+else:
+    print("Forma de pagamento inválida!")
