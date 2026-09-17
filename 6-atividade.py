@@ -8,11 +8,9 @@ media = (nota1 + nota2) / 2
 
 print("Média:", media)
 
-if media >= 6:
-    print("Parabéns! Você foi aprovado!")
-
-elif media >= 4:
+if media >= 6.0:
+    print("Parabéns! Você está aprovado!")
+elif media >= 4.1:
     print("Você está em recuperação.")
-
 else:
-    print("Você foi reprovado.")
+    print("Você está reprovado.")

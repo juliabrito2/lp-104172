@@ -1,15 +1,29 @@
 import os
-os.system('cls' if os.name == 'nt' else 'clear')
+os.system('cls')
 
-n1 = int(input("Digite o primeiro numero: "))
-n2 = int(input("Digite o segundo numero: "))
+operacao = input("Digite a operação (+, -, * ou /): ")
 
-print("Os numeros informados são: ", n1, "e", n2)
-if n1 > n2:
-    print("O maior número é:", n1)
-    print("O menor número é:", n2)
-elif n2 > n1:
-    print("O maior número é:", n2)
-    print("O menor número é:", n1)
+A = int(input("Digite A: "))
+B = int(input("Digite B: "))
+
+if operacao == "+":
+    resultado = A + B
+    print("Resultado:", resultado)
+
+elif operacao == "-":
+    resultado = A - B
+    print("Resultado:", resultado)
+
+elif operacao == "*":
+    resultado = A * B
+    print("Resultado:", resultado)
+
+elif operacao == "/":
+    if B != 0:
+        resultado = A / B
+        print("Resultado:", resultado)
+    else:
+        print("Não é possível dividir por zero.")
+
 else:
-    print("Os dois números são iguais")
+    print("Operação inválida.")
